@@ -7,14 +7,14 @@ import ComposerPage from './components/ComposerPage';
 app.initializers.add('flagrow-direct-links', () => {
     app.routes.flagrowDirectLinksLogin = {
         path: '/login',
-        component: LoginPage.component(),
+        component: LoginPage
     };
     app.routes.flagrowDirectLinksSignup = {
         path: '/signup',
-        component: SignupPage.component(),
+        component: SignupPage
     };
     app.routes.flagrowDirectLinksComposer = {
         path: '/composer',
-        component: ComposerPage.component(),
+        component: ComposerPage
     };
 });

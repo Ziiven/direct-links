@@ -2,12 +2,13 @@ import app from 'flarum/app';
 import Page from 'flarum/components/Page';
 
 export default class RedirectToHomeAndOpenModalPage extends Page {
-    init() {
-        super.init();
+    oninit(vnode) {
+        super.oninit(vnode);
 
-        m.route('/');
+        m.route.set('/');
 
-        app.modal.show(this.createModal());
+        // TODO: figure out why the modal closes without this
+        setTimeout(() => app.modal.show(this.createModal()), 100);
     }
 
     createModal() {

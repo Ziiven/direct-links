@@ -4,18 +4,18 @@ import DiscussionComposer from 'flarum/components/DiscussionComposer';
 import LogInModal from 'flarum/components/LogInModal';
 
 export default class ComposerPage extends Page {
-    init() {
-        super.init();
+    oninit(v) {
+        super.oninit(v);
 
         if (!app.session.user) {
-            app.modal.show(new LogInModal());
+            setTimeout(() => app.modal.show(LogInModal), 100);
 
             return;
         }
 
         const params = m.route.param();
 
-        m.route('/');
+        m.route.set('/');
 
         setTimeout(() => {
             let composerProps = {
@@ -26,24 +26,27 @@ export default class ComposerPage extends Page {
                 composerProps.originalContent = params.content;
             }
 
-            const component = new DiscussionComposer(composerProps);
+            app.composer.load(DiscussionComposer, composerProps);
 
+            app.composer.show();
+            
             if (params.title) {
-                component.title(params.title);
+                app.composer.fields.title(params.title);
             }
 
-            if (params.tag) {
-                const tag = app.store.getBy('tags', 'slug', params.tag);
+            console.debug(params);
+
+            if (params.primary_tag) {
+                const tag = app.store.getBy('tags', 'slug', params.primary_tag);
 
                 if (tag) {
                     const parent = tag.parent();
 
-                    component.tags = parent ? [parent, tag] : [tag];
+                    app.composer.fields.tags = parent ? [parent, tag] : [tag];
                 }
             }
 
-            app.composer.load(component);
-            app.composer.show();
+            
         }, 0);
     }
 
