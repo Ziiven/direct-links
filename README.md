@@ -27,16 +27,6 @@ php flarum migrate
 php flarum cache:clear
 ```
 
-## Support our work
-
-Check out how to support Flagrow extensions at [flagrow.io/support-us](https://flagrow.io/support-us).
-
-## Security
-
-If you discover a security vulnerability within Direct Links, please send an email to the Gravure team at security@gravure.io. All security vulnerabilities will be promptly addressed.
-
-Please include as many details as possible. You can use `php flarum info` to get the PHP, Flarum and extension versions installed.
-
 ## Links
 
 - 
