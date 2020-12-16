@@ -32,4 +32,4 @@ php flarum cache:clear
 - 
 
 ## Credits
-This extension was created by a developer group called Flagrow which is no more. I think that Clark Winkelmann had a lot to do with it. I am simply forking a version of it to see if it will work. 
+Original author: Clark Winkelmann
