@@ -17,7 +17,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "elint",
+            "title": "Direct Links",
             "icon": {
                 "name": "fas fa-link",
                 "backgroundColor": "#ddd",
