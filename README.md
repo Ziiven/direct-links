@@ -1,6 +1,4 @@
-# Direct Links by ![Flagrow logo](https://avatars0.githubusercontent.com/u/16413865?v=3&s=20) [Flagrow](https://discuss.flarum.org/d/1832-flagrow-extension-developer-group), a project of [Gravure](https://gravure.io/)
-
-[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/flagrow/direct-links/blob/master/LICENSE.md) [![Latest Stable Version](https://img.shields.io/packagist/v/flagrow/direct-links.svg)](https://packagist.org/packages/flagrow/direct-links) [![Total Downloads](https://img.shields.io/packagist/dt/flagrow/direct-links.svg)](https://packagist.org/packages/flagrow/direct-links) [![Support Us](https://img.shields.io/badge/flagrow.io-support%20us-yellow.svg)](https://flagrow.io/support-us) [![Join our Discord server](https://discordapp.com/api/guilds/240489109041315840/embed.png)](https://flagrow.io/join-discord)
+# Direct Links
 
 This extension adds direct links to various Flarum actions:
 
@@ -17,16 +15,14 @@ The user will have to load the original `/composer` url again to get those value
 
 ## Installation
 
-Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-marketplace) or install manually:
-
 ```bash
-composer require flagrow/direct-links
+composer require zerosonesfun/direct-links
 ```
 
 ## Updating
 
 ```bash
-composer update flagrow/direct-links
+composer update zerosonesfun/direct-links
 php flarum migrate
 php flarum cache:clear
 ```
@@ -43,9 +39,7 @@ Please include as many details as possible. You can use `php flarum info` to get
 
 ## Links
 
-- [Flarum Discuss post](https://discuss.flarum.org/d/12452-flagrow-direct-links-links-for-login-and-new-discussion)
-- [Source code on GitHub](https://github.com/flagrow/direct-links)
-- [Report an issue](https://github.com/flagrow/direct-links/issues)
-- [Download via Packagist](https://packagist.org/packages/flagrow/direct-links)
+- 
 
-An extension by [Flagrow](https://flagrow.io/), a project of [Gravure](https://gravure.io/).
+## Credits
+This extension was created by a developer group called Flagrow which is no more. I think that Clark Winkelmann had a lot to do with it. I am simply forking a version of it to see if it will work. 
