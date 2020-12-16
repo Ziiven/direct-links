@@ -1,5 +1,5 @@
 {
-    "name": "flagrow/direct-links",
+    "name": "zerosonesfun/direct-links",
     "description": "Adds direct links to various Flarum actions",
     "keywords": [
         "extension",
@@ -17,24 +17,17 @@
             "homepage": "https://clarkwinkelmann.com/"
         }
     ],
-    "support": {
-        "issues": "https://github.com/flagrow/direct-links/issues",
-        "source": "https://github.com/flagrow/direct-links"
-    },
     "require": {
         "flarum/core": "^0.1.0-beta.8"
     },
     "extra": {
         "flarum-extension": {
-            "title": "Flagrow Direct Links",
+            "title": "Direct Links",
             "icon": {
                 "name": "fas fa-link",
                 "backgroundColor": "#f4f4f4",
                 "color": "#5f4bb6"
             }
-        },
-        "flagrow": {
-            "discuss": "https://discuss.flarum.org/d/12452"
         }
     }
 }
