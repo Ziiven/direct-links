@@ -1,32 +1,27 @@
 {
     "name": "zerosonesfun/direct-links",
-    "description": "Adds direct links to various Flarum actions",
-    "keywords": [
-        "extension",
-        "flarum",
-        "flagrow",
-        "direct",
-        "links"
-    ],
-    "type": "flarum-extension",
+    "description": "Adds some direct links and auto fill features.",
     "license": "MIT",
     "authors": [
         {
-            "name": "Clark Winkelmann",
-            "email": "clark.winkelmann@gmail.com",
-            "homepage": "https://clarkwinkelmann.com/"
+            "name": "Clark Winklemann",
+            "role": "Creator"
         }
     ],
+    "type": "flarum-extension",
     "require": {
-        "flarum/core": "^0.1.0-beta.8"
+        "flarum/core": ">=0.1.0-beta.14 <0.1.0-beta.15"
+    },
+    "autoload": {
+        "psr-4": {"ZerosOnesFun\\DirectLinks\\": "src/"}
     },
     "extra": {
         "flarum-extension": {
-            "title": "Direct Links",
+            "title": "elint",
             "icon": {
                 "name": "fas fa-link",
-                "backgroundColor": "#f4f4f4",
-                "color": "#5f4bb6"
+                "backgroundColor": "#ddd",
+                "color": "#000"
             }
         }
     }
