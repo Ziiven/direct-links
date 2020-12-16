@@ -27,6 +27,12 @@ php flarum migrate
 php flarum cache:clear
 ```
 
+## Removing
+
+```bash
+composer remove zerosonesfun/direct-links
+```
+
 ## Links
 
 - [Github](https://github.com/zerosonesfun/direct-links/)
