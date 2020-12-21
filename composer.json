@@ -33,7 +33,7 @@
     "extra": {
         "flarum-extension": {
             "title": "Direct Links",
-            "category": "features",
+            "category": "feature",
             "icon": {
                 "name": "fas fa-link",
                 "backgroundColor": "#ddd",
