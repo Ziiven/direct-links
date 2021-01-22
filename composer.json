@@ -2,7 +2,7 @@
     "name": "zerosonesfun/direct-links",
     "description": "Adds some direct links and composer auto-fill capabilities.",
     "type": "flarum-extension",
-    "keywords": ["discussion, features, links"],
+    "keywords": ["discussion", "features", "links"],
     "license": "MIT",
     "authors": [
         {
