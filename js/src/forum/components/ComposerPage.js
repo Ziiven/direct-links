@@ -15,7 +15,7 @@ export default class ComposerPage extends Page {
 
         const params = m.route.param();
 
-        m.route.set('/');
+        m.route.set('/all');
 
         setTimeout(() => {
             let composerProps = {

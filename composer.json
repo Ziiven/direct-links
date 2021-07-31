@@ -9,6 +9,11 @@
             "name": "Clark Winkelmann",
             "homepage": "https://clarkwinkelmann.com/",
             "role": "Creator"
+        },
+        {
+            "name": "Billy Wilcosky",
+            "homepage": "https://www.wilcosky.com/",
+            "role": "Maintainer"
         }
     ],
     "support": {

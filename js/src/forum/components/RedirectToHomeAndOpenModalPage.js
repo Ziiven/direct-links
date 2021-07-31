@@ -6,8 +6,7 @@ export default class RedirectToHomeAndOpenModalPage extends Page {
         super.oninit(vnode);
 
         m.route.set('/');
-
-        // TODO: figure out why the modal closes without this
+        
         setTimeout(() => app.modal.show(this.createModal()), 100);
     }
 
