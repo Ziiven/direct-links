@@ -1,19 +1,23 @@
-import {extend} from 'flarum/extend';
-import app from 'flarum/app';
+import app from 'flarum/forum/app';
 import LoginPage from './components/LoginPage';
 import SignupPage from './components/SignupPage';
+import ForgotPage from './components/ForgotPage';
 import ComposerPage from './components/ComposerPage';
 
-app.initializers.add('flagrow-direct-links', () => {
-    app.routes.flagrowDirectLinksLogin = {
+app.initializers.add('direct-links', () => {
+    app.routes.directLinksLogin = {
         path: '/login',
         component: LoginPage
     };
-    app.routes.flagrowDirectLinksSignup = {
+    app.routes.directLinksSignup = {
         path: '/signup',
         component: SignupPage
     };
-    app.routes.flagrowDirectLinksComposer = {
+    app.routes.directLinksForgot = {
+        path: '/forgot',
+        component: ForgotPage
+    };
+    app.routes.directLinksComposer = {
         path: '/composer',
         component: ComposerPage
     };

@@ -1,7 +1,7 @@
-import app from 'flarum/app';
-import Page from 'flarum/components/Page';
-import DiscussionComposer from 'flarum/components/DiscussionComposer';
-import LogInModal from 'flarum/components/LogInModal';
+import app from 'flarum/forum/app';
+import Page from 'flarum/forum/components/Page';
+import DiscussionComposer from 'flarum/forum/components/DiscussionComposer';
+import LogInModal from 'flarum/forum/components/LogInModal';
 
 export default class ComposerPage extends Page {
     oninit(v) {
@@ -9,8 +9,7 @@ export default class ComposerPage extends Page {
 
         if (!app.session.user) {
             setTimeout(() => app.modal.show(LogInModal), 100);
-
-            return;
+            return m.route.set('/');
         }
 
         const params = m.route.param();

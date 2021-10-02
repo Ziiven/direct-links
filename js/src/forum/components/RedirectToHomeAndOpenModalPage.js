@@ -1,5 +1,5 @@
-import app from 'flarum/app';
-import Page from 'flarum/components/Page';
+import app from 'flarum/forum/app';
+import Page from 'flarum/forum/components/Page';
 
 export default class RedirectToHomeAndOpenModalPage extends Page {
     oninit(vnode) {
@@ -7,7 +7,7 @@ export default class RedirectToHomeAndOpenModalPage extends Page {
 
         m.route.set('/');
         
-        setTimeout(() => app.modal.show(this.createModal()), 100);
+        setTimeout(() => app.modal.show(this.createModal()), 200);
     }
 
     createModal() {
