@@ -8,7 +8,7 @@ export default class ComposerPage extends Page {
         super.oninit(v);
 
         if (!app.session.user) {
-            setTimeout(() => app.modal.show(LogInModal), 100);
+            setTimeout(() => app.modal.show(LogInModal), 500);
             return m.route.set('/');
         }
 

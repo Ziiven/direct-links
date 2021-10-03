@@ -7,7 +7,7 @@ export default class RedirectToHomeAndOpenModalPage extends Page {
 
         m.route.set('/');
         
-        setTimeout(() => app.modal.show(this.createModal()), 200);
+        setTimeout(() => app.modal.show(this.createModal()), 1500);
     }
 
     createModal() {

@@ -182,7 +182,7 @@ var ComposerPage = /*#__PURE__*/function (_Page) {
     if (!flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.session.user) {
       setTimeout(function () {
         return flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.modal.show(flarum_forum_components_LogInModal__WEBPACK_IMPORTED_MODULE_4___default.a);
-      }, 100);
+      }, 500);
       return m.route.set('/');
     }
 
@@ -344,7 +344,7 @@ var RedirectToHomeAndOpenModalPage = /*#__PURE__*/function (_Page) {
     m.route.set('/');
     setTimeout(function () {
       return flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.modal.show(_this.createModal());
-    }, 200);
+    }, 1500);
   };
 
   _proto.createModal = function createModal() {
