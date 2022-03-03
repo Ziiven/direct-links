@@ -1,20 +1,20 @@
 import app from 'flarum/forum/app';
-import Page from 'flarum/forum/components/Page';
+import Page from 'flarum/common/components/Page';
 
 export default class RedirectToHomeAndOpenModalPage extends Page {
-    oninit(vnode) {
-        super.oninit(vnode);
+  oninit(vnode) {
+    super.oninit(vnode);
 
-        m.route.set('/');
-        
-        setTimeout(() => app.modal.show(this.createModal()), 1500);
-    }
+    m.route.set('/');
 
-    createModal() {
-        return null;
-    }
+    setTimeout(() => app.modal.show(this.createModal()), 1500);
+  }
 
-    view() {
-        return m('div');
-    }
+  createModal() {
+    return null;
+  }
+
+  view() {
+    return m('div');
+  }
 }
