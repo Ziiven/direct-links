@@ -42,6 +42,29 @@ export default class ComposerPage extends Page {
           app.composer.fields.tags = parent ? [parent, tag] : [tag];
         }
       }
+
+      if (params.tag_list) {
+        let tagsList = [];
+        let tagsArray = (params.tag_list).split(",");
+
+        for(let i=0;i<tagsArray.length;i++){
+          const tag = app.store.getBy('tags', 'slug', tagsArray[i]);
+
+          if(tag){
+            const parent = tag.parent();
+
+            if(parent){
+              tagsList.push(parent);
+            }
+
+            tagsList.push(tag);
+          }
+        }
+
+        if (tagsList.length>0) {
+          app.composer.fields.tags = tagsList;
+        }
+      }
     }, 0);
   }
 
